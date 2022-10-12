@@ -1,0 +1,98 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #333333;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+}
+
+#app-root {
+	height: 100vh;
+	width: 1100px;
+	margin: auto;
+}
+
+.tiptap-editor-container {
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	padding: 15px;
+	border: 1px solid red;
+}
+
+.ProseMirror {
+	height: 100%;
+	width: 100%;
+	border: none !important;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+a {
+	cursor: pointer;
+}
+
+code {
+	background-color: #616161;
+	border-radius: 0.25em;
+	padding: 20px;
+	display: flex;
+	flex-grow: 1;
+}
+
+ul,
+ol {
+	padding-left: 1rem;
+}
+
+p {
+	line-height: 1.5;
+	margin-bottom: 8px;
+	font-weight: 400;
+	/* font-size: ${FontSize.m}; */
+}
+
+.is-empty::before {
+	content: attr(data-placeholder);
+	float: left;
+	/* color: ${Colors.placeholderText}; */
+	pointer-events: none;
+	height: 0;
+}
+
+table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	margin: 0;
+	overflow: hidden;
+}
+
+td, th {
+	min-width: 8em;
+	border: 2px solid;
+	padding: 7px 9px;
+	vertical-align: top;
+	box-sizing: border-box;
+	position: relative;
+}
+
+th {
+	text-align: left;
+}
+
+ul[data-type='taskList'] {
+	padding: 0;
+}
